@@ -20,11 +20,12 @@ public class ArraySort1 {
 		 * } } System.out.println("total count >> "+count); for (int i = 0; i <
 		 * arr.length; i++) { System.out.println(arr[i]); }
 		 */
+
 		int temp;
 		for (int i = 0; i < arr.length; i++) {
 			for (int k = i + 1; k < arr.length; k++) {
 				if (arr[i] > arr[k]) {
-					temp =arr[k];
+					temp = arr[k];
 					arr[k] = arr[i];
 					arr[i] = temp;
 				}

@@ -65,11 +65,13 @@ public class JdbcUtil {
 
 }
 
-/*public static void main(String[] args) {
- Class.forName("com.mysql.jdbc.Driver");
- Connection conn = DriverManager.getConnection("jdbc:mysql://101.201.235.213:3306:cg", "cg", "123456");
- Statement stem = conn.createStatement();
- ResultSet rs = stem.executeQuery("sql");
-
-	 
- }*/
+/*
+ * public static void main(String[] args) {
+ * Class.forName("com.mysql.jdbc.Driver"); Connection conn =
+ * DriverManager.getConnection("jdbc:mysql://101.201.235.213:3306:cg", "cg",
+ * "123456"); Statement stem = conn.createStatement(); ResultSet rs =
+ * stem.executeQuery("sql");
+ * 
+ * 
+ * }
+ */
