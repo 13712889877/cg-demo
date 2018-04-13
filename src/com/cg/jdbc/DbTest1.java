@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.cg.javabean.User;
+import com.mysql.jdbc.PreparedStatement;
 
 public class DbTest1 {
 
@@ -118,7 +119,7 @@ public class DbTest1 {
 		Class.forName("com.mysql.jdbc.Driver");
 
 		Connection conn= DriverManager.getConnection("jdbc:mysql://101.201.235.213:3306/cg","cg",  "123456");
-		Statement stmt = conn.createStatement();
+		Statement stmt = conn.prepareStatement("sql");
 		ResultSet rs = stmt.executeQuery("select * from user");
 		
 		for(;rs.next();) {
@@ -137,6 +138,12 @@ public class DbTest1 {
 		
 		//return result;
 
+	}
+	
+	public void sadfew(PreparedStatement stmt) throws SQLException {
+		
+		stmt.enableStreamingResults();
+		
 	}
 
 }

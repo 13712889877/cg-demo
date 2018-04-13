@@ -8,11 +8,11 @@ import java.sql.Statement;
 
 public class JdbcUtil {
 
-	public Connection conn = null;
-	public Statement stmt = null;
-	public ResultSet rs = null;
+	private  Connection conn = null;
+	private Statement stmt = null;
+	private ResultSet rs = null;
 	String dbDriver = "com.mysql.jdbc.Driver";
-	String url = "jdbc:mysql://101.201.235.213:3306:cg";
+	String url = "jdbc:mysql://101.201.235.213:3306/cg";
 	String username = "cg";
 	String password = "123456";
 
@@ -63,10 +63,10 @@ public class JdbcUtil {
 		}
 	}
 
-}
 
-/*
- * public static void main(String[] args) {
+
+
+ /* public static void main(String[] args) {
  * Class.forName("com.mysql.jdbc.Driver"); Connection conn =
  * DriverManager.getConnection("jdbc:mysql://101.201.235.213:3306:cg", "cg",
  * "123456"); Statement stem = conn.createStatement(); ResultSet rs =
@@ -75,3 +75,17 @@ public class JdbcUtil {
  * 
  * }
  */
+
+
+	/*public class JdbcUtil {
+	 * public static void main(String[] args) throws ClassNotFoundException,
+	 * SQLException { Class.forName("com.mysql.jdbc.Driver"); Connection conn =
+	 * DriverManager.getConnection("jdbc:mysql://101.201.235.213:3306:cg","cg",
+	 * "123456"); Statement stmt = conn.createStatement(); ResultSet rs =
+	 * stmt.executeQuery("sql"); if(stmt!=null) { stmt.close(); } if(conn!=null) {
+	 * conn.close(); }
+	 * 
+	 * }
+	 */
+}
+

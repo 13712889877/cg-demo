@@ -20,12 +20,16 @@ public class UserTest {
 
 		User u1 = new User(3,"aad");
 		
+		System.out.println(u1.getName());
+		
+		u1.setName("aaaa");
+	
+		System.out.println(u1.getName());
+		
+		//System.out.println(	u1.name);
 	
 		
-		System.out.println(	u1.name);
-	
-		
-		new UserTest().method654123(aa,u1);
+		//new UserTest().method654123(aa,u1);
 	}
 	
 	public Map<String,Map<String,Integer>> method654123(String sql,User wangpeng) {

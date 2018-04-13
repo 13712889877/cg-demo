@@ -1,5 +1,7 @@
 package com.cg.javabean;
 
+import java.sql.Connection;
+
 public class User {
 	
 	public static int sss = 666;
@@ -9,6 +11,25 @@ public class User {
 	public String name;
 
 	
+	private  Connection conn;
+	
+	
+	public User(Connection eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee) {
+		this.conn = eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee;
+	}
+	
+	public Connection getConn() {
+		return conn;
+	}
+
+
+
+	public void setConn(Connection conn) {
+		this.conn = conn;
+	}
+
+
+
 	public User() {
 		super();
 	}
@@ -26,7 +47,7 @@ public class User {
 		return sss;
 	}
 	
-	/*
+	
 	public int getId() {
 		return id;
 	}
@@ -37,5 +58,5 @@ public class User {
 
 	public void setName(String name) {
 		this.name = name;
-	}*/
+	}
 }
